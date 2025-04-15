@@ -11,8 +11,8 @@ def main():
     clock  = pg.time.Clock()
     bg_img = pg.image.load("fig/pg_bg.jpg")
     kk_img = pg.image.load("fig/3.png")
-    kk_img = pg.image.frip(kk_img, True, False)
-    kk_img = pg.image.rotozoom(kk_img, 10, 1.0)
+    kk_img = pg.transform.flip(kk_img, True, False)
+    kk_img = pg.transform.rotozoom(kk_img, 10, 1.0)
     tmr = 0
     while True:
         for event in pg.event.get():
