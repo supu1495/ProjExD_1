@@ -7,10 +7,10 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 def main():
     pg.display.set_caption("はばたけ！こうかとん")
-    kk_img = pg.image.load("fig/3.png")
     screen = pg.display.set_mode((800, 600))
     clock  = pg.time.Clock()
     bg_img = pg.image.load("fig/pg_bg.jpg")
+    kk_img = pg.image.load("fig/3.png")
     tmr = 0
     while True:
         for event in pg.event.get():
